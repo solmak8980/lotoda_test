@@ -1,0 +1,9 @@
+{
+  "name": "lotoda",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "8d3e37be"
+}
