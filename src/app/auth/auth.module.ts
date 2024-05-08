@@ -7,8 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { AuthPageRoutingModule } from './auth-routing.module';
 
 import { AuthPage } from './auth.page';
-import { FooterComponent } from '../components/footer/footer.component';
-
 @NgModule({
   imports: [
     CommonModule,
@@ -16,6 +14,6 @@ import { FooterComponent } from '../components/footer/footer.component';
     IonicModule,
     AuthPageRoutingModule
   ],
-  declarations: [AuthPage,FooterComponent]
+  declarations: [AuthPage]
 })
 export class AuthPageModule {}
