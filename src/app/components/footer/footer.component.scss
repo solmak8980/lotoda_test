@@ -1,7 +1,8 @@
 .footer-gap {
     background:#0056f7;
-    height: 3.2em;
+    height: 5em;
     position: relative;
+    display: block;
 }
 
 .footer-gap::before {
@@ -14,4 +15,5 @@
     // border-bottom-left-radius:2em;
     // border-bottom-right-radius:2em;
     clip-path: ellipse();
+    display: block;
 }
