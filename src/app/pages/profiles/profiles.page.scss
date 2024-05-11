@@ -1,15 +1,47 @@
 .button-s1 {
-    --background: #0056f7;
-    color: aliceblue;
-    box-shadow: inset;
-    width: 12em;
-    font-size: 16px;
-  }
+  --background: #0056f7;
+  color: aliceblue;
+  box-shadow: inset;
+  width: 12em;
+  height: 2em;
+  font-size: 16px;
+}
 
-.icon{
-    font-size: 32px;
-    margin-right: 1.1em;
-    opacity: 0.3;
-    padding-bottom: 0.35em;
-    color: #0056f7;
+.icon {
+  font-size: 32px;
+  margin-right: 1.1em;
+  // opacity: 0.3;
+  padding-bottom: 0.35em;
+  color: #000000;
+}
+
+// .icon-edit{
+//   position: absolute;
+//   top: -1em;
+// }
+
+.backgound-av {
+  width: 100%;
+  background: #fcfcfc;
+  position: relative;
+}
+
+.backgound-av::before {
+  content: "";
+  background: url('https://cdn.builder.io/api/v1/image/assets/TEMP/85c07dd39c24765eeaed89cd1468e7d8bb7f3a3cb8081aa5617d664f3f133a47?apiKey=9cce0a3bf445400ab25afd487ca3b91b&" alt="Decorative image" class="w-full aspect-[2.33] max-w-[414px]');
+  position: absolute;
+  width: 120%;
+  height: 16em;
+  top: -7em;
+  left: -2.2em;
+  clip-path: ellipse();
+}
+
+.avatar{
+  position: absolute;
+  top: 5em;
+}
+
+.item{
+  margin-bottom: 1em;
 }
