@@ -9,12 +9,12 @@ export const ADMIN_SIDENAV: MenuItem[] = [
   {
     path: '/sld-dashboard',
     label: 'IoT Dashboard',
-    icon: 'saxElement3Bold',
+    icon: 'saxElement4Bold',
   },
   {
     path: '/divices-management',
     label: 'Devices Management',
-    icon: 'saxElement4Bold',
+    icon: 'saxSetting4Bold',
   },
   {
     path: '/realtime-data',
@@ -29,7 +29,7 @@ export const ADMIN_SIDENAV: MenuItem[] = [
   {
     path: '/setting',
     label: 'Setting',
-    icon: 'saxSetting4Bold',
+    icon: 'saxSetting2Bold',
   },
   {
     path: '/history-report',

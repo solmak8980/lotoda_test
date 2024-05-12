@@ -1,17 +1,17 @@
-.button-s1 {
+.button-sl {
   --background: #0056f7;
   color: aliceblue;
-  width: 12em;
-  height: 3.2em;
+  width: 10em;
+  height: 2.5em;
   font-size: 16px;
 }
 
 .icon {
   font-size: 32px;
   margin-right: 1.1em;
-  // opacity: 0.3;
+  opacity: 0.5;
   padding-bottom: 0.35em;
-  color: #000000;
+  color: #000bde;
 }
 
 // .icon-edit{
@@ -27,7 +27,7 @@
 
 .backgound-av::before {
   content: "";
-  background: url('https://cdn.builder.io/api/v1/image/assets/TEMP/85c07dd39c24765eeaed89cd1468e7d8bb7f3a3cb8081aa5617d664f3f133a47?apiKey=9cce0a3bf445400ab25afd487ca3b91b&" alt="Decorative image" class="w-full aspect-[2.33] max-w-[414px]');
+  background: url('https://www.shutterstock.com/image-illustration/iot-internet-things-industry-40-260nw-1495192142.jpg');
   position: absolute;
   width: 120%;
   height: 16em;
