@@ -31,16 +31,20 @@
   position: absolute;
   width: 120%;
   height: 16em;
-  top: -7em;
-  left: -2.2em;
+  top: -5em;
+  left: -2em;
   clip-path: ellipse();
 }
 
 .avatar{
   position: absolute;
-  top: 5em;
+  top: 7.5em;
 }
 
 .item{
   margin-bottom: 0.8em;
+}
+
+.list-item{
+  margin-top: 14em;
 }

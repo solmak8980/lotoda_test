@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+}
+
+.background-list {
+    width: 100%;
+    height: 10em;
+    background: url('https://cdn.builder.io/api/v1/image/assets/TEMP/1f2798f8933925ebc41f10a963e8a9880b64e1e1a140827b4a90be0a30e1a375?apiKey=9cce0a3bf445400ab25afd487ca3b91b&" alt="Decorative image" class="w-full" aspect-[1.19] max-w-[250px]');
+    border: none;
+}
+
+.background-list h3 {
+    color: aliceblue;
+    margin-top: 1em;
+}
+
+.avatar {
+    position: absolute;
+    top: 1.5em;
+}
+
+.button-s1 {
+    --background: #0056f7;
+    color: aliceblue;
+    width: 12em;
+    height: 2.5em;
+    font-size: 15px;
+}
+
+.list-items .icons{
+    font-size: 38px;
+    color: #0056f7;
+    opacity: 0.75;
+}
+
+.list-items a{
+    font-weight: bold;
+}

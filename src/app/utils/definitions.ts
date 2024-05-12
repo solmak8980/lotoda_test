@@ -4,47 +4,47 @@ export const ADMIN_SIDENAV: MenuItem[] = [
   {
     path: '/dashboard',
     label: 'Dashboard',
-    icon: 'saxHome1Outline',
+    icon: 'saxHomeBold',
   },
   {
     path: '/sld-dashboard',
     label: 'IoT Dashboard',
-    icon: 'saxElement3Outline',
+    icon: 'saxElement3Bold',
   },
   {
     path: '/divices-management',
     label: 'Devices Management',
-    icon: 'saxElement4Outline',
+    icon: 'saxElement4Bold',
   },
   {
     path: '/realtime-data',
     label: 'Realtime Data',
-    icon: 'saxDataOutline',
+    icon: 'saxSecurityTimeBold',
   },
   {
     path: '/alert-rules',
     label: 'Alert Rules',
-    icon: 'saxNotificationBingOutline',
+    icon: 'saxNotificationBingBold',
   },
   {
     path: '/setting',
     label: 'Setting',
-    icon: 'saxSetting2Outline',
+    icon: 'saxSetting4Bold',
   },
   {
     path: '/history-report',
     label: 'History & Report',
-    icon: 'saxChart3Outline',
+    icon: 'saxChartBold',
   },
   {
     path: '/profile',
     label: 'Profile',
-    icon: 'saxProfile2userOutline',
+    icon: 'saxUserBold',
   },
   {
     path: '/support',
     label: 'Support',
-    icon: 'saxExportOutline',
+    icon: 'saxBubbleBold',
   },
 ];
 
