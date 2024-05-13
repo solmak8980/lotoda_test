@@ -7,12 +7,12 @@ export const ADMIN_SIDENAV: MenuItem[] = [
     icon: 'saxHomeBold',
   },
   {
-    path: '/sld-dashboard',
+    path: '/iot-dashboard',
     label: 'IoT Dashboard',
     icon: 'saxElement4Bold',
   },
   {
-    path: '/divices-management',
+    path: '/devices-management  ',
     label: 'Devices Management',
     icon: 'saxSetting4Bold',
   },

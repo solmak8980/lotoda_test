@@ -3,7 +3,7 @@
     height: 7em;
     position: relative;
     display: block;
-    margin-top: 7em;
+    margin-top: 8em;
     margin-bottom: 0;
 }
 
@@ -18,9 +18,4 @@
     // border-bottom-right-radius:2em;
     clip-path: ellipse();
     display: block;
-}
-
-.inp-content::placeholder{
-    border-style: solid;
-    border-color: red;
 }

@@ -33,6 +33,7 @@ export class AuthService {
           window.location.reload();
         } else {
           alert('Not are not active!');
+          window.location.reload();
         }
       });
   }
