@@ -1,50 +1,67 @@
-import { MenuItem } from './interfaces';
+import { MenuItem, Roles } from './interfaces';
 
-export const ADMIN_SIDENAV: MenuItem[] = [
+export const SIDENAV: MenuItem[] = [
   {
     path: '/sld-dashboard',
-    label: 'SLD Dashboard',
-    icon: 'saxHome1Outline',
+    label: 'SDL Dashboard',
+    icon: 'saxHomeBold',
+    forRole: Roles.user,
+  },
+  {
+    path: '/dashboard',
+    label: 'Dashboard admin',
+    icon: 'saxHomeBold',
+    forRole: Roles.admin,
   },
   {
     path: '/iot-dashboard',
-    label: 'IoT Dashboard',
-    icon: 'saxElement3Outline',
+    label: 'IOT Dashboard',
+    icon: 'saxElement4Bold',
+    forRole: Roles.user,
   },
   {
     path: '/devices-management',
     label: 'Devices Management',
-    icon: 'saxElement4Outline',
+    icon: 'saxSetting4Bold',
+    forRole: Roles.user,
   },
   {
     path: '/realtime-data',
     label: 'Realtime Data',
-    icon: 'saxDataOutline',
+    icon: 'saxSecurityTimeBold',
+    forRole: Roles.user,
   },
   {
     path: '/alert-rules',
     label: 'Alert Rules',
-    icon: 'saxNotificationBingOutline',
+    icon: 'saxNotificationBingBold',
+    forRole: Roles.user,
   },
   {
-    path: '/settings',
+    path: '/setting',
     label: 'Setting',
-    icon: 'saxSetting2Outline',
+    icon: 'saxSetting2Bold',
+    forRole: Roles.user,
   },
   {
-    path: '/history-report',
+    path: '/history-and-report',
     label: 'History & Report',
-    icon: 'saxChart3Outline',
+    icon: 'saxChartBold',
+    forRole: Roles.user,
   },
   {
     path: '/profile',
     label: 'Profile',
-    icon: 'saxProfile2userOutline',
+    icon: 'saxUserBold',
+    forRole: Roles.user,
   },
   {
     path: '/support',
     label: 'Support',
-    icon: 'saxExportOutline',
+    icon: 'saxBubbleBold',
+    forRole: Roles.user,
   },
 ];
 
+export const DEFAULT_USER_AVATAR: string =
+  'https://cdn.builder.io/api/v1/image/assets/TEMP/f86a665d3276d99eff1777fc264645af21b004db3b87f103a7496892c6a844f3?apiKey=9cce0a3bf445400ab25afd487ca3b91b&';

@@ -4,53 +4,84 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'sld-dashboard',
+    title: 'SDL Dashboard',
     loadChildren: () =>
       import('./sld-dashboard/sld-dashboard.module').then(
         (m) => m.SLDDashboardPageModule
       ),
   },
-  {
-    path: 'iot-dashboard',
-    loadChildren: () => import('./iot-dashboard/iot-dashboard.module').then(m => m.IOTDashboardPageModule)
-  },
+
   {
     path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
+    title: 'Profile',
+    loadChildren: () =>
+      import('./profiles/profiles.module').then((m) => m.ProfilesPageModule),
   },
+
+  {
+    path: 'iot-dashboard',
+    title: 'IOT Dashboard',
+    loadChildren: () =>
+      import('./iot-dashboard/iot-dashboard.module').then(
+        (m) => m.IOTDashboardPageModule
+      ),
+  },
+
   {
     path: 'devices-management',
-    loadChildren: () => import('./devices-management/devices-management.module').then(m => m.DevicesManagementPageModule)
+    title: 'Devices Management',
+    loadChildren: () =>
+      import('./devices-management/devices-management.module').then(
+        (m) => m.DevicesManagementPageModule
+      ),
   },
+
   {
     path: 'realtime-data',
-    loadChildren: () => import('./realtime-data/realtime-data.module').then(m => m.RealtimeDataPageModule)
+    title: 'Realtime Data',
+    loadChildren: () =>
+      import('./realtime-data/realtime-data.module').then(
+        (m) => m.RealtimeDataPageModule
+      ),
   },
+
   {
     path: 'alert-rules',
-    loadChildren: () => import('./alert-rules/alert-rules.module').then(m => m.AlertRulesPageModule)
+    title: 'Alert Rules',
+    loadChildren: () =>
+      import('./alert-rules/alert-rules.module').then(
+        (m) => m.AlertRulesPageModule
+      ),
   },
+
   {
-    path: 'settings',
-    loadChildren: () => import('./settings/settings.module').then(m => m.SettingsPageModule)
+    path: 'setting',
+    title: 'Setting',
+    loadChildren: () =>
+      import('./setting/setting.module').then((m) => m.SettingPageModule),
   },
+
   {
-    path: 'history-report',
-    loadChildren: () => import('./history-report/history-report.module').then(m => m.HistoryReportPageModule)
+    path: 'history-and-report',
+    title: 'History and Report',
+    loadChildren: () =>
+      import('./history-and-report/history-and-report.module').then(
+        (m) => m.HistoryAndReportPageModule
+      ),
   },
+
   {
     path: 'support',
-    loadChildren: () => import('./support/support.module').then(m => m.SupportPageModule)
+    title: 'Support',
+    loadChildren: () =>
+      import('./support/support.module').then((m) => m.SupportPageModule),
   },
-
-
 
   { path: '', redirectTo: '/pages/sld-dashboard', pathMatch: 'full' },
   { path: '**', redirectTo: '/pages/sld-dashboard' },
-
-
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
 })
-export class PagesRoutingModule { }
+export class PagesRoutingModule {}

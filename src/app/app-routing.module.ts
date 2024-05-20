@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { PagesPage } from './pages/pages.page';
+import { AuthPage } from './auth/auth.page';
+import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
     path: 'auth',
+    component: AuthPage,
     loadChildren: () =>
       import('./auth/auth.module').then((m) => m.AuthPageModule),
   },
@@ -13,6 +16,8 @@ const routes: Routes = [
     component: PagesPage,
     loadChildren: () =>
       import('./pages/pages.module').then((m) => m.PagesModule),
+    canLoad: [authGuard],
+    title: 'Page',
   },
 
   { path: '', redirectTo: 'pages', pathMatch: 'full' },

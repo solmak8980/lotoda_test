@@ -1,1 +1,0 @@
-# lotoda_test

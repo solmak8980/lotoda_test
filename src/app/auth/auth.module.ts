@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { AuthPage } from './auth.page';
+
 import { AuthPageRoutingModule } from './auth-routing.module';
-import { FooterComponent } from '../components/footer/footer.component';
+
+import { AuthPage } from './auth.page';
 
 @NgModule({
-  declarations: [AuthPage, FooterComponent],
-  imports: [CommonModule, AuthPageRoutingModule, IonicModule],
+  imports: [CommonModule, FormsModule, IonicModule, AuthPageRoutingModule],
+  declarations: [AuthPage],
 })
 export class AuthPageModule {}
